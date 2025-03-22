@@ -1,0 +1,6 @@
+- hosts: debian_target
+  become: true
+  vars:
+    debian_release: bookworm
+  roles:
+    - debian

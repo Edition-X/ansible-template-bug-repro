@@ -1,0 +1,7 @@
+# Debian updates
+deb http://httpredir.debian.org/debian {{ debian_release }} main non-free contrib non-free-firmware
+deb-src http://httpredir.debian.org/debian {{ debian_release }} main non-free contrib non-free-firmware
+
+# Security updates
+deb http://security.debian.org/ {{ debian_release }}/updates main contrib non-free non-free-firmware
+deb-src http://security.debian.org/ {{ debian_release }}/updates main contrib non-free non-free-firmware

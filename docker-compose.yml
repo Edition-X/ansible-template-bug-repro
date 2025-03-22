@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  debian_host:
+    build: .
+    container_name: debian_target
+    ports:
+      - "2222:22"
+    networks:
+      - ansible_net
+
+networks:
+  ansible_net:
+    driver: bridge
